@@ -159,18 +159,18 @@ Go to the site below and pick the desired list. For this demo select all list - 
 
 `https://v.firebog.net/hosts/lists.php`
 
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture24.PNG "PI-Hole Interface")
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture24.PNG "PI-Hole")
 
 
 Once the desired list is selected a list of files will be presented. Copy the entire list and then paste it into the Address text box in the web interface.
 
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture25.PNG "PI-Hole Interface")
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture25.PNG "PI-Hole")
 
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture26.PNG "PI-Hole Interface")
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture26.PNG "PI-Hole")
 
 Then click on "Add"
 
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture27.PNG "PI-Hole Interface")
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture27.PNG "PI-Hole")
 
 This does not add the block list to the Database automatically. Open a new terminal and run.
 
@@ -178,9 +178,10 @@ This does not add the block list to the Database automatically. Open a new termi
 pihole -g
 ```
 
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture28.PNG "PI-Hole Interface")
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture28.PNG "PI-Hole")
 
 Once that completes go back to the homepage of the web interface and note how many domains are now blocked
 
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture29.PNG "PI-Hole")
 
 
