@@ -9,7 +9,7 @@ sudo apt update
 Start PI Hole Install
 
 ```bash
-curl -sSL https://install.pi-hole.net | sudo PIHOLE_SKIP_OS_CHECK=true bash`
+curl -sSL https://install.pi-hole.net | sudo PIHOLE_SKIP_OS_CHECK=true bash
 ```
 
 `Select: OK`
@@ -58,7 +58,7 @@ Leave defaults
 After the installation is completed the password for the web interface is shown. This needs to be saved to a file for later reference
 
 ```bash
-nano /home/admins/Desktop/pi-hole-info`
+nano /home/admins/Desktop/pi-hole-info
 ```
 
 Paste the login into the file. 
@@ -71,7 +71,7 @@ Then hit y and enter to save.
 For DNS request to be sent to our PI-Hole the PI-Hole's IP address must be set as the primary DNS. Raspbian sets this in the file below.
 
 ```bash
-sudo nano /etc/dhcpcd.conf`
+sudo nano /etc/dhcpcd.conf
 ```
 
 Go to the bottom of the file and modify the line below to match
