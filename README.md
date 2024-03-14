@@ -94,7 +94,7 @@ sudo nano /etc/dhcpcd.conf
 ```
 
 Go to the bottom of the file and modify the line below to match
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture20.PNG "PI-Hole Password")
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture20.PNG "PI-Hole DNS")
 `static domain_name_servers=127.0.0.1`
 
 The address 127.0.0.1 always points to the localhost/computer.
@@ -118,7 +118,7 @@ Then print the resolv.conf file to the console to verify the setting.
 ```bash
 cat /etc/resolv.conf
 ```
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture21.PNG "PI-Hole Password")
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture21.PNG "PI-Hole DNS")
 
 Print out should contain
 
@@ -129,12 +129,15 @@ Open web browser and go to
 
 `localhost/admin`
 
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture22.PNG "PI-Hole Interface")
+
 Provide password saved previously. 
 This is the web interface that comes with PI-Hole.
 
-Note the Domains on Adlist count.
+Note the "Domains on Adlist" count.
 
 Note the number of queries and queries blocked.
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture23.PNG "PI-Hole Interface")
 
 Open a new tab and go to www.cnn.com.
 
@@ -156,15 +159,26 @@ Go to the site below and pick the desired list. For this demo select all list - 
 
 `https://v.firebog.net/hosts/lists.php`
 
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture24.PNG "PI-Hole Interface")
+
+
 Once the desired list is selected a list of files will be presented. Copy the entire list and then paste it into the Address text box in the web interface.
 
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture25.PNG "PI-Hole Interface")
+
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture26.PNG "PI-Hole Interface")
+
 Then click on "Add"
+
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture27.PNG "PI-Hole Interface")
 
 This does not add the block list to the Database automatically. Open a new terminal and run.
 
 ```bash
 pihole -g
 ```
+
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture28.PNG "PI-Hole Interface")
 
 Once that completes go back to the homepage of the web interface and note how many domains are now blocked
 
