@@ -23,7 +23,9 @@ This page and the next ones deal with static IP addresses. If setting this up pe
 `Select: Continue`
 
 ![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture5.PNG "PI-Hole Install")
-`Select: Yes Set static IP using current values -> Continue` 
+`Select: Yes Set static IP using current values`
+
+`Select: Continue` 
 
 ![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture6.PNG "PI-Hole Install")
 `Select: OK`
@@ -38,45 +40,49 @@ Then enter the IP of the UNF DNS
 ![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture8.PNG "PI-Hole Install")		
 `Enter: 139.62.200.185`
 
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture9.PNG "PI-Hole Install")
 `Select: OK`
 
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture10.PNG "PI-Hole Install")
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture9.PNG "PI-Hole Install")
 `Select: Yes`
 
 This page is asking if you want to include the default block lists.
 
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture11.PNG "PI-Hole Install")
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture10.PNG "PI-Hole Install")
 `Select: Yes`
 
 The next page is asking if you want the web portal installed. This is highly recommended since it allows for easy management of the PI-Hole software.
 
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture11.PNG "PI-Hole Install")
+`Select: Yes`
+
 ![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture12.PNG "PI-Hole Install")
 `Select: Yes`
 
+This page is asking if the DNS queries sent to PI-Hole should be logged. For this demo I recommend enabling this but if you want more privacy select no.
 ![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture13.PNG "PI-Hole Install")
 `Select: Yes`
 
-This page is asking if the DNS queries sent to PI-Hole should be logged. For this demo I recommend enabling this but if you want more privacy select no.
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture14.PNG "PI-Hole Install")
-`Select: Yes`
-
 Leave defaults
-	
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture14.PNG "PI-Hole Install")
  `Select: Continue`
 
 ## Save Web Interface Password
 After the installation is completed the password for the web interface is shown. This needs to be saved to a file for later reference
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture15.PNG "PI-Hole Password")
+`Select: OK`
 
+Copy the password from the screen below and save it to a file.
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture16.PNG "PI-Hole Password")
 ```bash
 nano /home/admins/Desktop/pi-hole-info
 ```
 
 Paste the login into the file. 
-
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture17.PNG "PI-Hole Password")
 Then hit ctrl+x. 
-
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture18.PNG "PI-Hole Password")
 Then hit y and enter to save.
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture19.PNG "PI-Hole Password")
 
 ## Set DNS Server for PI-Hole
 For DNS request to be sent to our PI-Hole the PI-Hole's IP address must be set as the primary DNS. Raspbian sets this in the file below.
