@@ -5,49 +5,60 @@ Update Package Repos
 ```bash
 sudo apt update
 ```
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture1.PNG "sudo apt update sample output")
 
 Start PI Hole Install
 
 ```bash
 curl -sSL https://install.pi-hole.net | sudo PIHOLE_SKIP_OS_CHECK=true bash
 ```
-
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture2.PNG "PI-Hole Install")
 `Select: OK`
 
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture3.PNG "PI-Hole Install")
 `Select: OK`
 
 This page and the next ones deal with static IP addresses. If setting this up permanently I highly recommend setting a static IP. For this demo though we will not need one.
-
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture4.PNG "PI-Hole Install")
 `Select: Continue`
 
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture5.PNG "PI-Hole Install")
 `Select: Yes Set static IP using current values -> Continue` 
 
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture6.PNG "PI-Hole Install")
 `Select: OK`
  
 This page is asking for the forwarder server. If setting this up anywhere but the UNF network select the default. For this demo we need to select custom.
-	
+
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture7.PNG "PI-Hole Install")	
 `Select: Custom`
 
 Then enter the IP of the UNF DNS
-		
+
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture8.PNG "PI-Hole Install")		
 `Enter: 139.62.200.185`
 
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture9.PNG "PI-Hole Install")
 `Select: OK`
 
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture10.PNG "PI-Hole Install")
 `Select: Yes`
 
 This page is asking if you want to include the default block lists.
 
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture11.PNG "PI-Hole Install")
 `Select: Yes`
 
 The next page is asking if you want the web portal installed. This is highly recommended since it allows for easy management of the PI-Hole software.
-	
+
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture12.PNG "PI-Hole Install")
 `Select: Yes`
 
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture13.PNG "PI-Hole Install")
 `Select: Yes`
 
 This page is asking if the DNS queries sent to PI-Hole should be logged. For this demo I recommend enabling this but if you want more privacy select no.
-
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture14.PNG "PI-Hole Install")
 `Select: Yes`
 
 Leave defaults
