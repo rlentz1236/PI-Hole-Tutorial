@@ -79,8 +79,10 @@ nano /home/admins/Desktop/pi-hole-info
 
 Paste the login into the file. 
 ![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture17.PNG "PI-Hole Password")
+
 Then hit ctrl+x. 
 ![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture18.PNG "PI-Hole Password")
+
 Then hit y and enter to save.
 ![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture19.PNG "PI-Hole Password")
 
@@ -92,7 +94,7 @@ sudo nano /etc/dhcpcd.conf
 ```
 
 Go to the bottom of the file and modify the line below to match
-
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture20.PNG "PI-Hole Password")
 `static domain_name_servers=127.0.0.1`
 
 The address 127.0.0.1 always points to the localhost/computer.
@@ -116,6 +118,7 @@ Then print the resolv.conf file to the console to verify the setting.
 ```bash
 cat /etc/resolv.conf
 ```
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture21.PNG "PI-Hole Password")
 
 Print out should contain
 
