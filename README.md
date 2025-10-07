@@ -58,6 +58,13 @@ After the installation is completed the password for the web interface is shown.
 Take a picture of the password or copy the password from the screen below and save it to a file.
 ![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture16.PNG "PI-Hole Password")
 
+## Update PI-Hole Database
+For PI-Hole to work the database needs to be updated. Which can be done by running the command below.
+
+```bash
+sudo pihole -g
+```
+
 ## Set DNS Server for PI-Hole
 For DNS request to be sent to our PI-Hole the PI-Hole's IP address must be set as the primary DNS. Raspbian sets this using the commands below.
 
@@ -133,7 +140,7 @@ Then click on "Add"
 This does not add the block list to the Database automatically. Open a new terminal and run.
 
 ```bash
-pihole -g
+sudo pihole -g
 ```
 
 ![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture28.PNG "PI-Hole")
