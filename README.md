@@ -42,14 +42,6 @@ This page is asking if you want to include the default block lists.
 ![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture10.PNG "PI-Hole Install")
 `Select: Yes`
 
-The next page is asking if you want the web portal installed. This is highly recommended since it allows for easy management of the PI-Hole software.
-
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture11.PNG "PI-Hole Install")
-`Select: Yes`
-
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture12.PNG "PI-Hole Install")
-`Select: Yes`
-
 This page is asking if the DNS queries sent to PI-Hole should be logged. For this demo I recommend enabling this but if you want more privacy select no.
 ![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture13.PNG "PI-Hole Install")
 `Select: Yes`
