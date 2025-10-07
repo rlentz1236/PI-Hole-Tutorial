@@ -89,10 +89,10 @@ Then hit y and enter to save.
 ## Set DNS Server for PI-Hole
 For DNS request to be sent to our PI-Hole the PI-Hole's IP address must be set as the primary DNS. Raspbian sets this using the commands below.
 
-The address 127.0.0.1 always points to the localhost/computer.
+The address 127.0.0.1 always points to the localhost/computer. This forces the PI to use itself as the primary DNS server.
 
 ```bash
-sudo nmcli connection modify "Wired connection 1" ipv4.dns "1.1.1.1 8.8.8.8"
+sudo nmcli connection modify "Wired connection 1" ipv4.dns "127.0.0.1"
 ```
 
 ```bash
