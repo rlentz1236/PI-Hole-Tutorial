@@ -131,7 +131,7 @@ Once the desired list is selected a list of files will be presented. Copy the en
 
 ![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture25.PNG "PI-Hole")
 
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture26.PNG "PI-Hole")
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture26-1.PNG "PI-Hole")
 
 Then click on "Add"
 
