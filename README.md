@@ -87,30 +87,16 @@ Then hit y and enter to save.
 ![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture19.PNG "PI-Hole Password")
 
 ## Set DNS Server for PI-Hole
-For DNS request to be sent to our PI-Hole the PI-Hole's IP address must be set as the primary DNS. Raspbian sets this in the file below.
-
-```bash
-sudo nano /etc/dhcpcd.conf
-```
-
-Go to the bottom of the file and modify the line below to match
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture20.PNG "PI-Hole DNS")
-`static domain_name_servers=127.0.0.1`
+For DNS request to be sent to our PI-Hole the PI-Hole's IP address must be set as the primary DNS. Raspbian sets this using the commands below.
 
 The address 127.0.0.1 always points to the localhost/computer.
 
-Then hit ctrl+x
-
-Then hit y and enter to save.
-
-Next we need to reset the ethernet adapter so it uses the new DNS server.
-
 ```bash
-sudo ip link set down eth0
+sudo nmcli connection modify "Wired connection 1" ipv4.dns "1.1.1.1 8.8.8.8"
 ```
 
 ```bash
-sudo ip link set up eth0
+sudo nmcli connection up "Wired connection 1"
 ```
 
 Then print the resolv.conf file to the console to verify the setting.
