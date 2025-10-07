@@ -21,14 +21,6 @@ curl -sSL https://install.pi-hole.net | sudo PIHOLE_SKIP_OS_CHECK=true bash
 This page and the next ones deal with static IP addresses. If setting this up permanently I highly recommend setting a static IP. For this demo though we will not need one.
 ![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture4.PNG "PI-Hole Install")
 `Select: Continue`
-
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture5.PNG "PI-Hole Install")
-`Select: Yes Set static IP using current values`
-
-`Select: Continue` 
-
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture6.PNG "PI-Hole Install")
-`Select: OK`
  
 This page is asking for the forwarder server. If setting this up anywhere but the UNF network select the default. For this demo we need to select custom.
 
