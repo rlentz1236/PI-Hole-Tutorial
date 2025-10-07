@@ -67,24 +67,12 @@ Leave defaults
  `Select: Continue`
 
 ## Save Web Interface Password
-After the installation is completed the password for the web interface is shown. This needs to be saved to a file for later reference
+After the installation is completed the password for the web interface is shown. This needs to be saved for later reference. I recommend taking a picture of the output with your phone or saving the password to a text file on the PI.
 ![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture15.PNG "PI-Hole Password")
 `Select: OK`
 
-Copy the password from the screen below and save it to a file.
+Take a picture of the password or copy the password from the screen below and save it to a file.
 ![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture16.PNG "PI-Hole Password")
-```bash
-nano /home/admins/Desktop/pi-hole-info
-```
-
-Paste the login into the file. 
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture17.PNG "PI-Hole Password")
-
-Then hit ctrl+x. 
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture18.PNG "PI-Hole Password")
-
-Then hit y and enter to save.
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture19.PNG "PI-Hole Password")
 
 ## Set DNS Server for PI-Hole
 For DNS request to be sent to our PI-Hole the PI-Hole's IP address must be set as the primary DNS. Raspbian sets this using the commands below.
