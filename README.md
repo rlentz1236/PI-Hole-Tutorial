@@ -76,7 +76,7 @@ Then print the resolv.conf file to the console to verify the setting.
 ```bash
 cat /etc/resolv.conf
 ```
-![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture21-1.PNG "PI-Hole DNS")
+![update](https://raw.githubusercontent.com/rlentz1236/PI-Hole-Tutorial/main/Capture21-1.png "PI-Hole DNS")
 
 Print out should contain
 
